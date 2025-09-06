@@ -160,4 +160,18 @@ def profile(current_user):
         conn.close()
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=int(os.getenv('PORT', 5000)), debug=True)
+    print("Starting EcoFinds Backend with SQLite...")
+    print(f"Firebase available: {FIREBASE_AVAILABLE}")
+    print(f"Database file: {DATABASE_FILE}")
+    
+    # Initialize database
+    init_database()
+    
+    # Use PORT environment variable for Render
+    port = int(os.getenv('PORT', 5000))
+    
+    app.run(
+        host='0.0.0.0', 
+        port=port, 
+        debug=(os.getenv('FLASK_ENV', 'development') == 'development')
+    )
