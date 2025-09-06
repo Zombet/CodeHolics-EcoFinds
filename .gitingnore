@@ -1,0 +1,15 @@
+# Firebase config
+config.js
+
+# Node modules (if you ever use Node/Vite later)
+node_modules/
+
+# Log files
+*.log
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Environment files (if you add .env in future)
+.env
