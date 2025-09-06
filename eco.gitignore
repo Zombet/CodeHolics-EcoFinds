@@ -18,7 +18,7 @@ env/
 .env
 .env.local
 
-# Node modules (if you ever use Node/Vite later)
+# Node modules
 node_modules/
 
 # Log files
