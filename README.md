@@ -1,7 +1,7 @@
 # EcoFinds - Sustainable Marketplace
 
 ## Demo
-Live demo: [your-railway-url]
+Live demo:[ https://code-holics-eco-finds.vercel.app/ ]
 
 ## Local Setup
 1. `python -m venv venv && source venv/bin/activate`
